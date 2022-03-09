@@ -3,12 +3,9 @@
 .App {
 	width: 100%;
 	min-height: 100vh;
-	font-family: 'Nunito', sans-serif;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	background-color: #488fb1;
-	padding-bottom: 20px;
 }
 
 .title {
@@ -72,4 +69,17 @@
 .clear_div2:hover{
 	cursor: pointer;
 	color: rgb(198, 198, 198);
+}
+.main {
+	width: 100%;
+	font-family: 'Nunito', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+@media (max-width: 650px) {
+	.main {
+		width: 90%;
+	}
 }

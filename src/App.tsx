@@ -56,6 +56,7 @@ const App:React.FC = () => {
   return (
     <DragDropContext onDragEnd={(result) => onDragEnd(result)}>
       <div className="App">
+        <div className='main'>
         <span className="title">DoItNow</span>
         <AddTask discription={desc} setDesc={setDesc} task={task} setTask={setTask} handleAdd={handleAddTask}/>
         <div className="container">
@@ -90,6 +91,7 @@ const App:React.FC = () => {
                 }
               </Droppable>
             
+        </div>
         </div>
       </div>
     </DragDropContext>
